@@ -16,6 +16,22 @@
 		C3CA6A5B2798B923007D5B8A /* OCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA6A5A2798B923007D5B8A /* OCSTests.swift */; };
 		C3CA6A652798B923007D5B8A /* OCSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA6A642798B923007D5B8A /* OCSUITests.swift */; };
 		C3CA6A672798B923007D5B8A /* OCSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA6A662798B923007D5B8A /* OCSUITestsLaunchTests.swift */; };
+		C3CA6A7A2798C15C007D5B8A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA6A792798C15C007D5B8A /* Request.swift */; };
+		C3CA6A7C2798C289007D5B8A /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA6A7B2798C289007D5B8A /* Programme.swift */; };
+		C3D21A5E27996B9F00AE6B5F /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A5D27996B9F00AE6B5F /* ProgrammeViewController.swift */; };
+		C3D21A6027996BB400AE6B5F /* DetailProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A5F27996BB400AE6B5F /* DetailProgrammeViewController.swift */; };
+		C3D21A6527996FBE00AE6B5F /* ProgrammeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A6327996FBE00AE6B5F /* ProgrammeCollectionViewCell.swift */; };
+		C3D21A6627996FBE00AE6B5F /* ProgrammeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D21A6427996FBE00AE6B5F /* ProgrammeCollectionViewCell.xib */; };
+		C3D21A69279983E000AE6B5F /* ProgrammeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A68279983E000AE6B5F /* ProgrammeInteractor.swift */; };
+		C3D21A6C2799872E00AE6B5F /* ProgrammesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A6B2799872E00AE6B5F /* ProgrammesAPIService.swift */; };
+		C3D21A6E27998DEE00AE6B5F /* ProgrammePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A6D27998DED00AE6B5F /* ProgrammePresenter.swift */; };
+		C3D21A7027998EB700AE6B5F /* ProgrammeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A6F27998EB700AE6B5F /* ProgrammeRouter.swift */; };
+		C3D21A75279AE32800AE6B5F /* DetailProgrammeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A74279AE32800AE6B5F /* DetailProgrammeInteractor.swift */; };
+		C3D21A77279AE33700AE6B5F /* DetailProgrammePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A76279AE33700AE6B5F /* DetailProgrammePresenter.swift */; };
+		C3D21A79279AE7DD00AE6B5F /* DetailProgramme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A78279AE7DD00AE6B5F /* DetailProgramme.swift */; };
+		C3D21A7C279B1AF200AE6B5F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C3D21A7B279B1AF200AE6B5F /* Kingfisher */; };
+		C3D21A80279B2CC300AE6B5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A7F279B2CC300AE6B5F /* Constants.swift */; };
+		C3D21A82279B2ED800AE6B5F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D21A81279B2ED800AE6B5F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,21 @@
 		C3CA6A602798B923007D5B8A /* OCSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CA6A642798B923007D5B8A /* OCSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCSUITests.swift; sourceTree = "<group>"; };
 		C3CA6A662798B923007D5B8A /* OCSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3CA6A792798C15C007D5B8A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C3CA6A7B2798C289007D5B8A /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
+		C3D21A5D27996B9F00AE6B5F /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
+		C3D21A5F27996BB400AE6B5F /* DetailProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProgrammeViewController.swift; sourceTree = "<group>"; };
+		C3D21A6327996FBE00AE6B5F /* ProgrammeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3D21A6427996FBE00AE6B5F /* ProgrammeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgrammeCollectionViewCell.xib; sourceTree = "<group>"; };
+		C3D21A68279983E000AE6B5F /* ProgrammeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeInteractor.swift; sourceTree = "<group>"; };
+		C3D21A6B2799872E00AE6B5F /* ProgrammesAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammesAPIService.swift; sourceTree = "<group>"; };
+		C3D21A6D27998DED00AE6B5F /* ProgrammePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammePresenter.swift; sourceTree = "<group>"; };
+		C3D21A6F27998EB700AE6B5F /* ProgrammeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeRouter.swift; sourceTree = "<group>"; };
+		C3D21A74279AE32800AE6B5F /* DetailProgrammeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProgrammeInteractor.swift; sourceTree = "<group>"; };
+		C3D21A76279AE33700AE6B5F /* DetailProgrammePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProgrammePresenter.swift; sourceTree = "<group>"; };
+		C3D21A78279AE7DD00AE6B5F /* DetailProgramme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProgramme.swift; sourceTree = "<group>"; };
+		C3D21A7F279B2CC300AE6B5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3D21A81279B2ED800AE6B5F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D21A7C279B1AF200AE6B5F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +131,13 @@
 		C3CA6A422798B921007D5B8A /* OCS */ = {
 			isa = PBXGroup;
 			children = (
+				C3CA6A782798BC46007D5B8A /* View */,
+				C3CA6A762798BC15007D5B8A /* Interactor */,
+				C3CA6A772798BC3A007D5B8A /* Presenter */,
+				C3CA6A752798BC09007D5B8A /* Entity */,
+				C3CA6A742798BBFB007D5B8A /* Router */,
+				C3CA6A732798BBEE007D5B8A /* Network */,
+				C3D21A7E279B2CAB00AE6B5F /* Utilities */,
 				C3CA6A432798B921007D5B8A /* AppDelegate.swift */,
 				C3CA6A452798B921007D5B8A /* SceneDelegate.swift */,
 				C3CA6A472798B921007D5B8A /* ViewController.swift */,
@@ -127,6 +166,94 @@
 			path = OCSUITests;
 			sourceTree = "<group>";
 		};
+		C3CA6A732798BBEE007D5B8A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A6A2799870900AE6B5F /* Service */,
+				C3CA6A792798C15C007D5B8A /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C3CA6A742798BBFB007D5B8A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A6F27998EB700AE6B5F /* ProgrammeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C3CA6A752798BC09007D5B8A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA6A7B2798C289007D5B8A /* Programme.swift */,
+				C3D21A78279AE7DD00AE6B5F /* DetailProgramme.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C3CA6A762798BC15007D5B8A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A68279983E000AE6B5F /* ProgrammeInteractor.swift */,
+				C3D21A74279AE32800AE6B5F /* DetailProgrammeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C3CA6A772798BC3A007D5B8A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A6D27998DED00AE6B5F /* ProgrammePresenter.swift */,
+				C3D21A76279AE33700AE6B5F /* DetailProgrammePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C3CA6A782798BC46007D5B8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A6127996F7600AE6B5F /* Controllers */,
+				C3D21A6227996F8F00AE6B5F /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3D21A6127996F7600AE6B5F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A5F27996BB400AE6B5F /* DetailProgrammeViewController.swift */,
+				C3D21A5D27996B9F00AE6B5F /* ProgrammeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3D21A6227996F8F00AE6B5F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A6327996FBE00AE6B5F /* ProgrammeCollectionViewCell.swift */,
+				C3D21A6427996FBE00AE6B5F /* ProgrammeCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C3D21A6A2799870900AE6B5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A6B2799872E00AE6B5F /* ProgrammesAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C3D21A7E279B2CAB00AE6B5F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C3D21A7F279B2CC300AE6B5F /* Constants.swift */,
+				C3D21A81279B2ED800AE6B5F /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +270,9 @@
 			dependencies = (
 			);
 			name = OCS;
+			packageProductDependencies = (
+				C3D21A7B279B1AF200AE6B5F /* Kingfisher */,
+			);
 			productName = OCS;
 			productReference = C3CA6A402798B921007D5B8A /* OCS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +345,9 @@
 				Base,
 			);
 			mainGroup = C3CA6A372798B921007D5B8A;
+			packageReferences = (
+				C3D21A7A279B1AF200AE6B5F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C3CA6A412798B921007D5B8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CA6A502798B922007D5B8A /* LaunchScreen.storyboard in Resources */,
+				C3D21A6627996FBE00AE6B5F /* ProgrammeCollectionViewCell.xib in Resources */,
 				C3CA6A4D2798B922007D5B8A /* Assets.xcassets in Resources */,
 				C3CA6A4B2798B921007D5B8A /* Main.storyboard in Resources */,
 			);
@@ -258,9 +392,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D21A75279AE32800AE6B5F /* DetailProgrammeInteractor.swift in Sources */,
+				C3D21A82279B2ED800AE6B5F /* Extensions.swift in Sources */,
+				C3D21A80279B2CC300AE6B5F /* Constants.swift in Sources */,
+				C3CA6A7C2798C289007D5B8A /* Programme.swift in Sources */,
+				C3D21A6C2799872E00AE6B5F /* ProgrammesAPIService.swift in Sources */,
 				C3CA6A482798B921007D5B8A /* ViewController.swift in Sources */,
+				C3CA6A7A2798C15C007D5B8A /* Request.swift in Sources */,
 				C3CA6A442798B921007D5B8A /* AppDelegate.swift in Sources */,
+				C3D21A69279983E000AE6B5F /* ProgrammeInteractor.swift in Sources */,
 				C3CA6A462798B921007D5B8A /* SceneDelegate.swift in Sources */,
+				C3D21A5E27996B9F00AE6B5F /* ProgrammeViewController.swift in Sources */,
+				C3D21A6E27998DEE00AE6B5F /* ProgrammePresenter.swift in Sources */,
+				C3D21A77279AE33700AE6B5F /* DetailProgrammePresenter.swift in Sources */,
+				C3D21A6027996BB400AE6B5F /* DetailProgrammeViewController.swift in Sources */,
+				C3D21A79279AE7DD00AE6B5F /* DetailProgramme.swift in Sources */,
+				C3D21A6527996FBE00AE6B5F /* ProgrammeCollectionViewCell.swift in Sources */,
+				C3D21A7027998EB700AE6B5F /* ProgrammeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +752,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3D21A7A279B1AF200AE6B5F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3D21A7B279B1AF200AE6B5F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3D21A7A279B1AF200AE6B5F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3CA6A382798B921007D5B8A /* Project object */;
 }
