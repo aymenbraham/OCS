@@ -97,7 +97,6 @@ final class NetworkController: NetworkControllerProtocol {
                 urlRequest.setValue(value, forHTTPHeaderField: key)
             }
         }
-        
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .map(\.data)
             .decode(type: T.self, decoder: JSONDecoder())

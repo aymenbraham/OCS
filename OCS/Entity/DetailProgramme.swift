@@ -16,7 +16,7 @@ struct ResponsDetailProgramme: Decodable {
 }
 
 struct Seasons: Decodable {
-    let seasons: [DetailProgramme?]?
+    let seasons: [DetailProgramme]?
     let pitch: String?
     
     private enum CodingKeys: String, CodingKey {

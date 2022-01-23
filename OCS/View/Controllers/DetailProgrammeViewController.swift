@@ -6,14 +6,12 @@
 //
 
 import UIKit
-import AVKit
 import Combine
 import Kingfisher
 
 class DetailProgrammeViewController: UIViewController {
     
     // MARK: -Outlets
-    
     @IBOutlet weak var programmeImage: UIImageView!
     @IBOutlet weak var programmeTitle: UILabel!
     @IBOutlet weak var programmeSubtitle: UILabel!
@@ -31,13 +29,25 @@ class DetailProgrammeViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
         if let detailLink = programme?.detailLink {
             getDetailProgramme(detailLink: detailLink)
         }
     }
     
     // MARK: - SetUp UI
+    private func setUpUI() {
+        self.programmeTitle.text = self.programme?.title?[0].value
+        self.programmeSubtitle.text = self.programme?.subtitle
+        if let urlimage = self.programme?.imageURL {
+            let fullURL = baseUrlImage + urlimage
+            self.programmeImage.kf.indicatorType = .activity
+            let url = URL(string: fullURL)
+            self.programmeImage.kf.setImage(with: url)
+        }
+    }
     
+    // MARK: - Get Programme Detail
     private func getDetailProgramme(detailLink: String) {
         if let detailLink = self.programme?.detailLink {
             presenter?.showDetailProgrammes(detailLink: detailLink).receive(on: DispatchQueue.main).sink(receiveCompletion: { (completion) in
@@ -48,37 +58,18 @@ class DetailProgrammeViewController: UIViewController {
                 }
             }) { detailProgrammes in
                 self.model = detailProgrammes
-                if let urlimage = self.programme?.imageURL {
-                    let urle = baseUrlImage + urlimage
-                    self.programmeImage.kf.indicatorType = .activity
-                    let url = URL(string: urle)
-                    self.programmeImage.kf.setImage(with: url)
-                }
                 if let saison = self.model?.contents?.seasons {
-                    self.programmePitch.text = saison[0]?.pitch
+                    self.programmePitch.text = saison[0].pitch
                 } else if let pitch = self.model?.contents?.pitch {
                     self.programmePitch.text = pitch
                 }
-                self.programmeTitle.text = self.programme?.title?[0].value
-                self.programmeSubtitle.text = self.programme?.subtitle
             }
             .store(in: &subscriptions)
         }
     }
     
-    private func updateModel(detail: String ) {
-        self.programmePitch.text = detail
-    }
-    
     // MARK: - UserInteraction
-    
     @IBAction func playButtonAction(_ sender: Any) {
-        let videoURL = URL(string: urlVideo)
-        let player = AVPlayer(url: videoURL!)
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        self.present(playerViewController, animated: true) {
-            playerViewController.player!.play()
-        }
+        presenter?.openVideo()
     }
 }

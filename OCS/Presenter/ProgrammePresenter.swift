@@ -15,12 +15,12 @@ protocol ProgrammesPresenterProtocol {
 
 class ProgrammePresenter: ProgrammesPresenterProtocol {
     
-    let interactor: ProgrammesInteractor
-    let router: ProgrammeRouter
+    let interactor: ProgrammeInteractorProtocol
+    let router: ProgrammessRouterProtocol
     var subscriptions = Set<AnyCancellable>()
     
     
-    init(interactor: ProgrammesInteractor, router: ProgrammeRouter) {
+    init(interactor: ProgrammeInteractorProtocol, router: ProgrammessRouterProtocol) {
         self.interactor = interactor
         self.router = router
     }

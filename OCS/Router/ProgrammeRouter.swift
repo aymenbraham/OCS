@@ -13,25 +13,29 @@ protocol ProgrammessRouterProtocol {
 }
 
 class ProgrammeRouter: ProgrammessRouterProtocol {
+    
     let presentingViewController: UIViewController
     
     init(presentingViewController: UIViewController) {
         self.presentingViewController = presentingViewController
     }
     
+    var storyboard: UIStoryboard {
+        UIStoryboard(name: "Main", bundle: nil)
+    }
+    
     func showProgrammeDetail(for programme: Programme) {
-        guard let navigationController = presentingViewController.navigationController else {
-            return
+        let detailProgrammeViewController = storyboard.instantiateViewController(
+            identifier: identifierDetailProgrammeController
+        ) { coder in
+            return DetailProgrammeViewController(coder: coder)
         }
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var detailProgrammeViewController = DetailProgrammeViewController()
-        detailProgrammeViewController = storyboard.instantiateViewController(withIdentifier: "DetailProgrammeViewController") as! DetailProgrammeViewController
         let networkController = NetworkController()
         let api = ProgrammesAPIService(networkController: networkController)
         let interactor = DetailProgrammesInteractor(apiService: api)
-        detailProgrammeViewController.presenter = DetailProgrammePresenter(interactor: interactor)
+        let router = DetailProgrammeRouter(currentViewController: detailProgrammeViewController)
+        detailProgrammeViewController.presenter = DetailProgrammePresenter(interactor: interactor, router: router)
         detailProgrammeViewController.programme = programme
-        navigationController.pushViewController(detailProgrammeViewController, animated: true)
+        presentingViewController.navigationController?.pushViewController(detailProgrammeViewController, animated: false)
     }
 }
-    

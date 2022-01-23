@@ -10,17 +10,24 @@ import Combine
 
 protocol DetailProgrammesPresenterProtocol {
     func showDetailProgrammes(detailLink: String) -> AnyPublisher<ResponsDetailProgramme, Error>
+    func openVideo()
 }
 
 class DetailProgrammePresenter: DetailProgrammesPresenterProtocol {
-    let interactor: DetailProgrammesInteractor
+    let interactor: DetailProgrammeInteractorProtocol
+    let router: DetailProgrammeRouterProtocol
     var subscriptions = Set<AnyCancellable>()
     
-    init(interactor: DetailProgrammesInteractor) {
+    init(interactor: DetailProgrammeInteractorProtocol, router: DetailProgrammeRouterProtocol) {
         self.interactor = interactor
+        self.router = router
     }
     
     func showDetailProgrammes(detailLink: String) -> AnyPublisher<ResponsDetailProgramme, Error> {
         interactor.getDetailProgrammes(detailLink: detailLink).eraseToAnyPublisher()
+    }
+    
+    func openVideo() {
+        router.openVideo()
     }
 }
